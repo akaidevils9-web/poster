@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Poster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="poster">
+    <h1><b>MY WEB POSTER</b></h1>
+    
+    <img src="8f9851fd-cffa-41fc-8900-f5382096e5e5.jpg" alt="Poster Image">
+
+    <p><b>This is my simple web poster project.</b></p>
+
+    <button onclick="showMore()"><b>Learn More</b></button>
+
+    <div id="moreInfo">
+        <p><b>This poster is created using HTML, CSS, and JavaScript. 
+        It is used for school projects and creative designs.</b></p>
+    </div>
+</div>
+
+<script>
+function showMore() {
+    var info = document.getElementById("moreInfo");
+    if (info.style.display === "block") {
+        info.style.display = "none";
+    } else {
+        info.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
